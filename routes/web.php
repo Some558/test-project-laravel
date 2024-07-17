@@ -2,10 +2,11 @@
 
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\TestController;
+use App\Http\Controllers\PostController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/test',[TestController::class,'test'])
-->name('test');
+Route::get('post/create',[PostController::class,'create'])
+->name('post');
 
 Route::get('/', function () {
     return view('welcome');

@@ -5,6 +5,9 @@ use App\Http\Controllers\TestController;
 use App\Http\Controllers\PostController;
 use Illuminate\Support\Facades\Route;
 
+Route::post('post',[PostController::class,'store'])
+->name('post.store');
+
 Route::get('post/create',[PostController::class,'create'])
 ->name('post');
 

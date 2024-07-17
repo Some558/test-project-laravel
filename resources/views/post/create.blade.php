@@ -6,7 +6,13 @@
     </x-slot>
 
     <div class="max-w-7xl mx-auto px-6">
-        <form>
+        @if(session('message'))
+        <div class="text-red-600 font-bold">
+            {{session('message')}}
+        </div>
+        @endif
+        <form method="post" action="{{route('post.store')}}">
+            @csrf
             <div class="mt-8">
                 <div class="w-full flex flex-col">
                     <label for="title" class="font-semibold mt-4">件名</label>
@@ -17,9 +23,7 @@
 
             <div class="w-full flex flex-col">
                 <label for="body" class="font-semibold mt-4">本文</label>
-                <textarea name="body" class="w-auto py-2 border
-                border-gray-300 rounded-md" id="body" cols="30" rows="5">
-                </textarea>
+                <textarea name="body" class="w-auto py-2 border border-gray-300 rounded-md" id="body" cols="30" rows="5"></textarea>
             </div>
 
             <x-primary-button class="mt-4">

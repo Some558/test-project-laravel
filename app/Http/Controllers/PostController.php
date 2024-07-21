@@ -9,7 +9,7 @@ class PostController extends Controller
 {
 
     public function index(){
-        $posts=Post::all();
+        $posts=Post::where('user_id' , auth()->id())->get();
         return view('post.index',compact('posts'));
     }
 

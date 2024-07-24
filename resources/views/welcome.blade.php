@@ -16,6 +16,9 @@
         </style>
     </head>
     <body class="font-sans antialiased dark:bg-black dark:text-white/50">
+        @can('test')
+            テストゲート
+        @endcan
         <body class="antialiased">
             @auth
                 <p>

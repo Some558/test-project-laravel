@@ -10,12 +10,11 @@ Route::post('post',[PostController::class,'store'])
 
 Route::get('post',[PostController::class, 'index']);
 
-Route::get('post/create',[PostController::class,'create'])
-->middleware('auth','admin');
+Route::get('post/create',[PostController::class,'create']);
 
 Route::get('/', function () {
     return view('welcome');
-}) ->middleware('auth');
+});
 
 Route::get('/dashboard', function () {
     return view('dashboard');

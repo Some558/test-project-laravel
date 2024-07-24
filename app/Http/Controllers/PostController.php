@@ -9,6 +9,11 @@ use App\Models\Post;
 class PostController extends Controller
 {
 
+    public function show ($id){
+        $post=Post::find($id);
+        return view('post.show',compact('post'));
+    }
+
     public function index(){
         $posts=Post::where('user_id' , auth()->id())->get();
         return view('post.index',compact('posts'));

@@ -5,6 +5,9 @@ use App\Http\Controllers\TestController;
 use App\Http\Controllers\PostController;
 use Illuminate\Support\Facades\Route;
 
+Route::get('post/show/{post}',[PostController::class, 'show'])
+->name('post.show');
+
 Route::post('post',[PostController::class,'store'])
 ->name('post.store');
 

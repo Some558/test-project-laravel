@@ -11,7 +11,7 @@ Route::post('post',[PostController::class,'store'])
 Route::get('post',[PostController::class, 'index']);
 
 Route::get('post/create',[PostController::class,'create'])
-->middleware('admin');
+->middleware('auth','admin');
 
 Route::get('/', function () {
     return view('welcome');

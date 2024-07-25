@@ -5,6 +5,11 @@ use App\Http\Controllers\TestController;
 use App\Http\Controllers\PostController;
 use Illuminate\Support\Facades\Route;
 
+Route::get('post/{post}/edit', [PostController::class, 'edit'])
+->name('post.edit');
+Route::patch('post/{post}' , [PostController::class, 'update'])
+->name('post.update');
+
 Route::get('post/show/{post}',[PostController::class, 'show'])
 ->name('post.show');
 

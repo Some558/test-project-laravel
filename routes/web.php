@@ -5,6 +5,9 @@ use App\Http\Controllers\TestController;
 use App\Http\Controllers\PostController;
 use Illuminate\Support\Facades\Route;
 
+Route::delete('post/{post}', [PostController::class, 'destroy'])
+->name('post.destroy');
+
 Route::get('post/{post}/edit', [PostController::class, 'edit'])
 ->name('post.edit');
 Route::patch('post/{post}' , [PostController::class, 'update'])
@@ -16,7 +19,7 @@ Route::get('post/show/{post}',[PostController::class, 'show'])
 Route::post('post',[PostController::class,'store'])
 ->name('post.store');
 
-Route::get('post',[PostController::class, 'index']);
+Route::get('post',[PostController::class, 'index'])->name('post.index');
 
 Route::get('post/create',[PostController::class,'create']);
 

@@ -45,7 +45,7 @@ class PostController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(post $post)
+    public function show(Post $post)
     {
         return view('post.show' , compact('post'));
     }
@@ -53,7 +53,7 @@ class PostController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(post $post)
+    public function edit(Post $post)
     {
         return view('post.edit' , compact('post'));
     }
@@ -61,7 +61,7 @@ class PostController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, post $post)
+    public function update(Request $request, Post $post)
     {
         $validated = $request->validate([
             'title' => 'required | max:20',
@@ -79,7 +79,7 @@ class PostController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(Request $request,post $post)
+    public function destroy(Request $request,Post $post)
     {
         $post->delete();
         $request->session()->flash('message','削除しました');

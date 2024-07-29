@@ -6,11 +6,8 @@
     </x-slot>
 
     <div class="mx-auto px-6">
-        @if(session('message'))
-            <div class="text-red-600 font-bold">
-                {{session('message')}}
-            </div>
-        @endif
+        <x-message :message="session('message')" />
+    </div>
         @foreach($posts as $post)
         <div class="mt-4 p-8 bg-white w-full rounded-2xl">
             <h1 class="p-4 text-lg font-semibold">
@@ -31,5 +28,7 @@
             </div>
         </div>
     @endforeach
+    <div class="mb-4">
+        {{ $posts->links()}}
     </div>
 </x-app-layout>

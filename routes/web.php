@@ -4,6 +4,15 @@ use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\PostController;
 use Illuminate\Support\Facades\Route;
 
+Route::get('/dbtest', function () {
+    try {
+        DB::connection()->getPdo();
+        return "データベース接続成功: " . DB::connection()->getDatabaseName();
+    } catch (\Exception $e) {
+        return "データベース接続エラー: " . $e->getMessage();
+    }
+});
+
 Route::resource('post', PostController::class);
 
 Route::get('/', function () {

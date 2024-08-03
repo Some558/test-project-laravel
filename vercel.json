@@ -29,11 +29,5 @@
         "LOG_CHANNEL": "stderr",
         "SESSION_DRIVER": "cookie",
         "VIEW_COMPILED_PATH": "/tmp",
-        "DB_CONNECTION":"mysql",
-        "DB_HOST":"mysql",
-        "DB_PORT":"3306",
-        "DB_DATABASE":"laravel",
-        "DB_USERNAME":"sail",
-        "DB_PASSWORD":"test1234"
     }
 }

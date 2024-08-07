@@ -4,6 +4,8 @@ use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\PostController;
 use Illuminate\Support\Facades\Route;
 
+Route::get('/search', [PostController::class, 'search'])->name('posts.search');
+
 Route::get('/dbtest', function () {
     try {
         DB::connection()->getPdo();

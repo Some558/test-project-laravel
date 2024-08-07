@@ -1,0 +1,239 @@
+$ fly logs -a test-project-summer-glitter-2943
+
+Waiting for logs...
+
+2024-08-07T13:44:38.928 runner[4d89440b641268] nrt [info] Pulling container image registry.fly.io/test-project-summer-glitter-2943:deployment-01J4PH51C33A6BR2TNT2F03NW9
+
+2024-08-07T13:44:53.733 runner[4d89440b641268] nrt [info] Successfully prepared image registry.fly.io/test-project-summer-glitter-2943:deployment-01J4PH51C33A6BR2TNT2F03NW9 (14.805156057s)
+
+2024-08-07T13:44:56.372 runner[4d89440b641268] nrt [info] Configuring firecracker
+
+2024-08-07T13:44:56.626 app[4d89440b641268] nrt [info] 2024-08-07T13:44:56.626023167 [01J4PHB969M4XR237SNVPMJBDD:main] Running Firecracker v1.7.0
+
+2024-08-07T13:44:56.984 app[4d89440b641268] nrt [info] [ 0.284079] PCI: Fatal: No config space access function found
+
+2024-08-07T13:44:57.276 app[4d89440b641268] nrt [info] INFO Starting init (commit: 20f21dc5f)...
+
+2024-08-07T13:44:57.307 app[4d89440b641268] nrt [info] INFO Preparing to run: `/entrypoint` as root
+
+2024-08-07T13:44:57.317 app[4d89440b641268] nrt [info] INFO [fly api proxy] listening at /.fly/api
+
+2024-08-07T13:44:57.327 runner[4d89440b641268] nrt [info] Machine created and started in 18.405s
+
+2024-08-07T13:44:57.330 app[4d89440b641268] nrt [info] 2024/08/07 13:44:57 INFO SSH listening listen_address=[fdaa:9:c1eb:a7b:d86c:c7f9:d9b4:2]:22 dns_server=[fdaa::3]:53
+
+2024-08-07T13:45:01.366 runner[1857272a445378] nrt [info] Pulling container image registry.fly.io/test-project-summer-glitter-2943:deployment-01J4PH51C33A6BR2TNT2F03NW9
+
+2024-08-07T13:45:01.611 app[4d89440b641268] nrt [info] 2024-08-07 13:45:01,610 CRIT Supervisor is running as root. Privileges were not dropped because no user is specified in the config file. If you intend to run as root, you can set user=root in the config file to avoid this message.
+
+2024-08-07T13:45:01.611 app[4d89440b641268] nrt [info] 2024-08-07 13:45:01,611 INFO Included extra file "/etc/supervisor/conf.d/fpm.conf" during parsing
+
+2024-08-07T13:45:01.611 app[4d89440b641268] nrt [info] 2024-08-07 13:45:01,611 INFO Included extra file "/etc/supervisor/conf.d/nginx.conf" during parsing
+
+2024-08-07T13:45:01.614 app[4d89440b641268] nrt [info] 2024-08-07 13:45:01,614 INFO RPC interface 'supervisor' initialized
+
+2024-08-07T13:45:01.615 app[4d89440b641268] nrt [info] 2024-08-07 13:45:01,614 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+
+2024-08-07T13:45:01.615 app[4d89440b641268] nrt [info] 2024-08-07 13:45:01,615 INFO supervisord started with pid 319
+
+2024-08-07T13:45:02.618 app[4d89440b641268] nrt [info] 2024-08-07 13:45:02,617 INFO spawned: 'php' with pid 335
+
+2024-08-07T13:45:02.620 app[4d89440b641268] nrt [info] 2024-08-07 13:45:02,620 INFO spawned: 'nginx' with pid 336
+
+2024-08-07T13:45:02.703 app[4d89440b641268] nrt [info] [07-Aug-2024 13:45:02] NOTICE: fpm is running, pid 335
+
+2024-08-07T13:45:02.704 app[4d89440b641268] nrt [info] [07-Aug-2024 13:45:02] NOTICE: ready to handle connections
+
+2024-08-07T13:45:02.705 app[4d89440b641268] nrt [info] [07-Aug-2024 13:45:02] NOTICE: systemd monitor interval set to 10000ms
+
+2024-08-07T13:45:03.706 app[4d89440b641268] nrt [info] 2024-08-07 13:45:03,705 INFO success: php entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+
+2024-08-07T13:45:03.706 app[4d89440b641268] nrt [info] 2024-08-07 13:45:03,705 INFO success: nginx entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+
+2024-08-07T13:45:14.170 runner[1857272a445378] nrt [info] Successfully prepared image registry.fly.io/test-project-summer-glitter-2943:deployment-01J4PH51C33A6BR2TNT2F03NW9 (12.803338907s)
+
+2024-08-07T13:45:16.548 runner[1857272a445378] nrt [info] Configuring firecracker
+
+2024-08-07T13:45:16.786 app[1857272a445378] nrt [info] 2024-08-07T13:45:16.786625710 [01J4PHBZ3GKR21YAAK1SVG16C3:main] Running Firecracker v1.7.0
+
+2024-08-07T13:45:17.136 app[1857272a445378] nrt [info] [ 0.275701] PCI: Fatal: No config space access function found
+
+2024-08-07T13:45:17.435 app[1857272a445378] nrt [info] INFO Starting init (commit: 20f21dc5f)...
+
+2024-08-07T13:45:17.464 app[1857272a445378] nrt [info] INFO Preparing to run: `/entrypoint` as root
+
+2024-08-07T13:45:17.471 app[1857272a445378] nrt [info] INFO [fly api proxy] listening at /.fly/api
+
+2024-08-07T13:45:17.480 app[1857272a445378] nrt [info] 2024/08/07 13:45:17 INFO SSH listening listen_address=[fdaa:9:c1eb:a7b:ff:5eeb:42aa:2]:22 dns_server=[fdaa::3]:53
+
+2024-08-07T13:45:17.485 runner[1857272a445378] nrt [info] Machine created and started in 16.123s
+
+2024-08-07T13:45:21.629 app[1857272a445378] nrt [info] 2024-08-07 13:45:21,628 CRIT Supervisor is running as root. Privileges were not dropped because no user is specified in the config file. If you intend to run as root, you can set user=root in the config file to avoid this message.
+
+2024-08-07T13:45:21.629 app[1857272a445378] nrt [info] 2024-08-07 13:45:21,628 INFO Included extra file "/etc/supervisor/conf.d/fpm.conf" during parsing
+
+2024-08-07T13:45:21.629 app[1857272a445378] nrt [info] 2024-08-07 13:45:21,629 INFO Included extra file "/etc/supervisor/conf.d/nginx.conf" during parsing
+
+2024-08-07T13:45:21.632 app[1857272a445378] nrt [info] 2024-08-07 13:45:21,632 INFO RPC interface 'supervisor' initialized
+
+2024-08-07T13:45:21.633 app[1857272a445378] nrt [info] 2024-08-07 13:45:21,632 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+
+2024-08-07T13:45:21.633 app[1857272a445378] nrt [info] 2024-08-07 13:45:21,633 INFO supervisord started with pid 319
+
+2024-08-07T13:45:22.637 app[1857272a445378] nrt [info] 2024-08-07 13:45:22,636 INFO spawned: 'php' with pid 335
+
+2024-08-07T13:45:22.643 app[1857272a445378] nrt [info] 2024-08-07 13:45:22,642 INFO spawned: 'nginx' with pid 336
+
+2024-08-07T13:45:22.725 app[1857272a445378] nrt [info] [07-Aug-2024 13:45:22] NOTICE: fpm is running, pid 335
+
+2024-08-07T13:45:22.726 app[1857272a445378] nrt [info] [07-Aug-2024 13:45:22] NOTICE: ready to handle connections
+
+2024-08-07T13:45:22.728 app[1857272a445378] nrt [info] [07-Aug-2024 13:45:22] NOTICE: systemd monitor interval set to 10000ms
+
+2024-08-07T13:45:23.729 app[1857272a445378] nrt [info] 2024-08-07 13:45:23,729 INFO success: php entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+
+2024-08-07T13:45:23.729 app[1857272a445378] nrt [info] 2024-08-07 13:45:23,729 INFO success: nginx entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+
+2024-08-07T13:45:47.536 app[1857272a445378] nrt [info] 172.16.160.234 - - [07/Aug/2024:13:45:47 +0000] "GET / HTTP/1.1" 200 9257 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36" "2402:6b00:9e0e:c100:d87b:5221:8bcc:2317"
+
+2024-08-07T13:45:49.354 app[4d89440b641268] nrt [info] 172.16.154.122 - - [07/Aug/2024:13:45:49 +0000] "GET /login HTTP/1.1" 200 1429 "https://test-project-summer-glitter-2943.fly.dev/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36" "2402:6b00:9e0e:c100:d87b:5221:8bcc:2317"
+
+2024-08-07T13:45:54.235 app[1857272a445378] nrt [info] {"message":"SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo for mysql failed: Name or service not known (Connection: mysql, SQL: select * from `cache` where `key` = laravel_cache_1641043@gmail.com|2402:6b00:9e0e:c100:d87b:5221:8bcc:2317 limit 1)","context":{"exception":{"class":"Illuminate\\Database\\QueryException","message":"SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo for mysql failed: Name or service not known (Connection: mysql, SQL: select * from `cache` where `key` = laravel_cache_1641043@gmail.com|2402:6b00:9e0e:c100:d87b:5221:8bcc:2317 limit 1)","code":2002,"file":"/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Connection.php:813","previous":{"class":"PDOException","message":"SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo for mysql failed: Name or service not known","code":2002,"file":"/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Connectors/Connector.php:65","previous":{"class":"PDOException","message":"PDO::__construct():
+
+2024-08-07T13:45:54.235 app[1857272a445378] nrt [info] php_network_getaddresses: getaddrinfo for mysql failed: Name or service not known","code":0,"file":"/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Connectors/Connector.php:65"}}}},"level":400,"level_name":"ERROR","channel":"production","datetime":"2024-08-07T22:45:54.233371+09:00","extra":{}}
+
+2024-08-07T13:45:54.245 app[1857272a445378] nrt [info] 172.16.160.234 - - [07/Aug/2024:13:45:54 +0000] "POST /login HTTP/1.1" 500 6622 "https://test-project-summer-glitter-2943.fly.dev/login" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36" "2402:6b00:9e0e:c100:d87b:5221:8bcc:2317"
+
+2024-08-07T13:45:59.606 app[1857272a445378] nrt [info] {"message":"SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo for mysql failed: Name or service not known (Connection: mysql, SQL: select * from `cache` where `key` = laravel_cache_1641043@gmail.com|2402:6b00:9e0e:c100:d87b:5221:8bcc:2317 limit 1)","context":{"exception":{"class":"Illuminate\\Database\\QueryException","message":"SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo for mysql failed: Name or service not known (Connection: mysql, SQL: select * from `cache` where `key` = laravel_cache_1641043@gmail.com|2402:6b00:9e0e:c100:d87b:5221:8bcc:2317 limit 1)","code":2002,"file":"/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Connection.php:813","previous":{"class":"PDOException","message":"SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo for mysql failed: Name or service not known","code":2002,"file":"/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Connectors/Connector.php:65","previous":{"class":"PDOException","message":"PDO::__construct():
+
+2024-08-07T13:45:59.606 app[1857272a445378] nrt [info] php_network_getaddresses: getaddrinfo for mysql failed: Name or service not known","code":0,"file":"/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Connectors/Connector.php:65"}}}},"level":400,"level_name":"ERROR","channel":"production","datetime":"2024-08-07T22:45:59.605337+09:00","extra":{}}
+
+2024-08-07T13:45:59.610 app[1857272a445378] nrt [info] 172.16.160.234 - - [07/Aug/2024:13:45:59 +0000] "POST /login HTTP/1.1" 500 6622 "https://test-project-summer-glitter-2943.fly.dev/login" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36" "2402:6b00:9e0e:c100:d87b:5221:8bcc:2317"
+
+2024-08-07T13:46:08.286 app[4d89440b641268] nrt [info] 172.16.154.122 - - [07/Aug/2024:13:46:08 +0000] "GET / HTTP/1.1" 200 9257 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36" "2402:6b00:9e0e:c100:d87b:5221:8bcc:2317"
+
+2024-08-07T13:46:10.031 app[1857272a445378] nrt [info] 172.16.160.234 - - [07/Aug/2024:13:46:10 +0000] "GET /login HTTP/1.1" 200 1429 "https://test-project-summer-glitter-2943.fly.dev/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36" "2402:6b00:9e0e:c100:d87b:5221:8bcc:2317"
+
+2024-08-07T13:46:16.796 app[4d89440b641268] nrt [info] {"message":"SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo for mysql failed: Name or service not known (Connection: mysql, SQL: select * from `cache` where `key` = laravel_cache_1641043@gmail.com|2402:6b00:9e0e:c100:d87b:5221:8bcc:2317 limit 1)","context":{"exception":{"class":"Illuminate\\Database\\QueryException","message":"SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo for mysql failed: Name or service not known (Connection: mysql, SQL: select * from `cache` where `key` = laravel_cache_1641043@gmail.com|2402:6b00:9e0e:c100:d87b:5221:8bcc:2317 limit 1)","code":2002,"file":"/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Connection.php:813","previous":{"class":"PDOException","message":"SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo for mysql failed: Name or service not known","code":2002,"file":"/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Connectors/Connector.php:65","previous":{"class":"PDOException","message":"PDO::__construct():
+
+2024-08-07T13:46:16.796 app[4d89440b641268] nrt [info] php_network_getaddresses: getaddrinfo for mysql failed: Name or service not known","code":0,"file":"/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Connectors/Connector.php:65"}}}},"level":400,"level_name":"ERROR","channel":"production","datetime":"2024-08-07T22:46:16.794007+09:00","extra":{}}
+
+2024-08-07T13:46:16.806 app[4d89440b641268] nrt [info] 172.16.154.122 - - [07/Aug/2024:13:46:16 +0000] "POST /login HTTP/1.1" 500 6622 "https://test-project-summer-glitter-2943.fly.dev/login" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36" "2402:6b00:9e0e:c100:d87b:5221:8bcc:2317"
+
+2024-08-07T13:49:08.712 app[4d89440b641268] nrt [info] 172.16.154.122 - - [07/Aug/2024:13:49:08 +0000] "GET / HTTP/1.1" 200 9257 "https://fly.io/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36" "2402:6b00:9e0e:c100:d87b:5221:8bcc:2317"
+
+2024-08-07T13:49:14.348 app[1857272a445378] nrt [info] 172.16.160.234 - - [07/Aug/2024:13:49:14 +0000] "GET /register HTTP/1.1" 200 1355 "https://test-project-summer-glitter-2943.fly.dev/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36" "2402:6b00:9e0e:c100:d87b:5221:8bcc:2317"
+
+2024-08-07T13:49:23.754 app[4d89440b641268] nrt [info] 172.16.154.122 - - [07/Aug/2024:13:49:23 +0000] "GET /login HTTP/1.1" 200 1429 "https://test-project-summer-glitter-2943.fly.dev/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36" "2402:6b00:9e0e:c100:d87b:5221:8bcc:2317"
+
+2024-08-07T13:49:28.797 app[4d89440b641268] nrt [info] {"message":"SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo for mysql failed: Name or service not known (Connection: mysql, SQL: select * from `cache` where `key` = laravel_cache_1641043@gmail.com|2402:6b00:9e0e:c100:d87b:5221:8bcc:2317 limit 1)","context":{"exception":{"class":"Illuminate\\Database\\QueryException","message":"SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo for mysql failed: Name or service not known (Connection: mysql, SQL: select * from `cache` where `key` = laravel_cache_1641043@gmail.com|2402:6b00:9e0e:c100:d87b:5221:8bcc:2317 limit 1)","code":2002,"file":"/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Connection.php:813","previous":{"class":"PDOException","message":"SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo for mysql failed: Name or service not known","code":2002,"file":"/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Connectors/Connector.php:65","previous":{"class":"PDOException","message":"PDO::__construct():
+
+2024-08-07T13:49:28.797 app[4d89440b641268] nrt [info] php_network_getaddresses: getaddrinfo for mysql failed: Name or service not known","code":0,"file":"/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Connectors/Connector.php:65"}}}},"level":400,"level_name":"ERROR","channel":"production","datetime":"2024-08-07T22:49:28.797070+09:00","extra":{}}
+
+2024-08-07T13:49:28.802 app[4d89440b641268] nrt [info] 172.16.154.122 - - [07/Aug/2024:13:49:28 +0000] "POST /login HTTP/1.1" 500 6622 "https://test-project-summer-glitter-2943.fly.dev/login" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36" "2402:6b00:9e0e:c100:d87b:5221:8bcc:2317"
+
+2024-08-07T13:51:28.958 proxy[1857272a445378] nrt [info] App test-project-summer-glitter-2943 has excess capacity, autostopping machine 1857272a445378. 1 out of 2 machines left running (region=nrt, process group=app)
+
+2024-08-07T13:51:28.960 app[1857272a445378] nrt [info] INFO Sending signal SIGINT to main child process w/ PID 319
+
+2024-08-07T13:51:29.519 app[1857272a445378] nrt [info] 2024-08-07 13:51:29,515 WARN received SIGINT indicating exit request
+
+2024-08-07T13:51:29.519 app[1857272a445378] nrt [info] 2024-08-07 13:51:29,515 INFO waiting for php, nginx to die
+
+2024-08-07T13:51:29.523 app[1857272a445378] nrt [info] 2024-08-07 13:51:29,519 INFO stopped: nginx (exit status 0)
+
+2024-08-07T13:51:29.523 app[1857272a445378] nrt [info] [07-Aug-2024 13:51:29] NOTICE: Terminating ...
+
+2024-08-07T13:51:29.528 app[1857272a445378] nrt [info] [07-Aug-2024 13:51:29] NOTICE: exiting, bye-bye!
+
+2024-08-07T13:51:30.536 app[1857272a445378] nrt [info] 2024-08-07 13:51:30,532 INFO stopped: php (exit status 0)
+
+2024-08-07T13:51:30.925 app[1857272a445378] nrt [info] INFO Main child exited normally with code: 0
+
+2024-08-07T13:51:30.936 app[1857272a445378] nrt [info] INFO Starting clean up.
+
+2024-08-07T13:51:30.938 app[1857272a445378] nrt [info] WARN could not unmount /rootfs: EINVAL: Invalid argument
+
+2024-08-07T13:51:30.939 app[1857272a445378] nrt [info] [ 374.070011] reboot: Restarting system
+
+2024-08-07T13:52:19.204 proxy[4d89440b641268] nrt [info] App test-project-summer-glitter-2943 has excess capacity, autostopping machine 4d89440b641268. 0 out of 1 machines left running (region=nrt, process group=app)
+
+2024-08-07T13:52:19.206 app[4d89440b641268] nrt [info] INFO Sending signal SIGINT to main child process w/ PID 319
+
+2024-08-07T13:52:20.022 app[4d89440b641268] nrt [info] 2024-08-07 13:52:20,018 WARN received SIGINT indicating exit request
+
+2024-08-07T13:52:20.022 app[4d89440b641268] nrt [info] 2024-08-07 13:52:20,018 INFO waiting for php, nginx to die
+
+2024-08-07T13:52:20.026 app[4d89440b641268] nrt [info] 2024-08-07 13:52:20,022 INFO stopped: nginx (exit status 0)
+
+2024-08-07T13:52:20.026 app[4d89440b641268] nrt [info] [07-Aug-2024 13:52:20] NOTICE: Terminating ...
+
+2024-08-07T13:52:20.029 app[4d89440b641268] nrt [info] [07-Aug-2024 13:52:20] NOTICE: exiting, bye-bye!
+
+2024-08-07T13:52:21.037 app[4d89440b641268] nrt [info] 2024-08-07 13:52:21,035 INFO stopped: php (exit status 0)
+
+2024-08-07T13:52:21.863 app[4d89440b641268] nrt [info] INFO Main child exited normally with code: 0
+
+2024-08-07T13:52:21.875 app[4d89440b641268] nrt [info] INFO Starting clean up.
+
+2024-08-07T13:52:21.876 app[4d89440b641268] nrt [info] WARN could not unmount /rootfs: EINVAL: Invalid argument
+
+2024-08-07T13:52:21.877 app[4d89440b641268] nrt [info] [ 445.162390] reboot: Restarting system
+
+2024-08-07T14:28:46.821 proxy[1857272a445378] nrt [info] Starting machine
+
+2024-08-07T14:28:46.909 app[1857272a445378] nrt [info] 2024-08-07T14:28:46.909258585 [01J4PHBZ3GKR21YAAK1SVG16C3:main] Running Firecracker v1.7.0
+
+2024-08-07T14:28:47.259 app[1857272a445378] nrt [info] [ 0.277756] PCI: Fatal: No config space access function found
+
+2024-08-07T14:28:47.558 app[1857272a445378] nrt [info] INFO Starting init (commit: 20f21dc5f)...
+
+2024-08-07T14:28:47.588 app[1857272a445378] nrt [info] INFO Preparing to run: `/entrypoint` as root
+
+2024-08-07T14:28:47.595 app[1857272a445378] nrt [info] INFO [fly api proxy] listening at /.fly/api
+
+2024-08-07T14:28:47.606 app[1857272a445378] nrt [info] 2024/08/07 14:28:47 INFO SSH listening listen_address=[fdaa:9:c1eb:a7b:ff:5eeb:42aa:2]:22 dns_server=[fdaa::3]:53
+
+2024-08-07T14:28:47.660 runner[1857272a445378] nrt [info] Machine started in 836ms
+
+2024-08-07T14:28:47.661 proxy[1857272a445378] nrt [info] machine started in 839.958001ms
+
+2024-08-07T14:28:51.468 app[1857272a445378] nrt [info] 2024-08-07 14:28:51,468 CRIT Supervisor is running as root. Privileges were not dropped because no user is specified in the config file. If you intend to run as root, you can set user=root in the config file to avoid this message.
+
+2024-08-07T14:28:51.468 app[1857272a445378] nrt [info] 2024-08-07 14:28:51,468 INFO Included extra file "/etc/supervisor/conf.d/fpm.conf" during parsing
+
+2024-08-07T14:28:51.468 app[1857272a445378] nrt [info] 2024-08-07 14:28:51,468 INFO Included extra file "/etc/supervisor/conf.d/nginx.conf" during parsing
+
+2024-08-07T14:28:51.473 app[1857272a445378] nrt [info] 2024-08-07 14:28:51,473 INFO RPC interface 'supervisor' initialized
+
+2024-08-07T14:28:51.473 app[1857272a445378] nrt [info] 2024-08-07 14:28:51,473 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+
+2024-08-07T14:28:51.473 app[1857272a445378] nrt [info] 2024-08-07 14:28:51,473 INFO supervisord started with pid 319
+
+2024-08-07T14:28:52.476 app[1857272a445378] nrt [info] 2024-08-07 14:28:52,475 INFO spawned: 'php' with pid 335
+
+2024-08-07T14:28:52.478 app[1857272a445378] nrt [info] 2024-08-07 14:28:52,478 INFO spawned: 'nginx' with pid 336
+
+2024-08-07T14:28:52.563 app[1857272a445378] nrt [info] [07-Aug-2024 14:28:52] NOTICE: fpm is running, pid 335
+
+2024-08-07T14:28:52.565 app[1857272a445378] nrt [info] [07-Aug-2024 14:28:52] NOTICE: ready to handle connections
+
+2024-08-07T14:28:52.566 app[1857272a445378] nrt [info] [07-Aug-2024 14:28:52] NOTICE: systemd monitor interval set to 10000ms
+
+2024-08-07T14:28:53.292 proxy[1857272a445378] nrt [info] waiting for machine to be reachable on 0.0.0.0:8080 (waited 5.630742018s so far)
+
+2024-08-07T14:28:53.292 proxy[1857272a445378] nrt [info] machine became reachable in 5.631159054s
+
+2024-08-07T14:28:53.511 app[1857272a445378] nrt [info] 172.16.160.234 - - [07/Aug/2024:14:28:53 +0000] "GET / HTTP/1.1" 200 9257 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36" "2402:6b00:9e0e:c100:d87b:5221:8bcc:2317"
+
+2024-08-07T14:28:53.511 app[1857272a445378] nrt [info] 2024-08-07 14:28:53,511 INFO success: php entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+
+2024-08-07T14:28:53.511 app[1857272a445378] nrt [info] 2024-08-07 14:28:53,511 INFO success: nginx entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+
+2024-08-07T14:28:55.055 app[1857272a445378] nrt [info] 172.16.160.234 - - [07/Aug/2024:14:28:55 +0000] "GET /login HTTP/1.1" 200 1429 "https://test-project-summer-glitter-2943.fly.dev/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36" "2402:6b00:9e0e:c100:d87b:5221:8bcc:2317"
+
+2024-08-07T14:29:00.027 app[1857272a445378] nrt [info] {"message":"SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo for mysql failed: Name or service not known (Connection: mysql, SQL: select * from `cache` where `key` = laravel_cache_1641043@gmail.com|2402:6b00:9e0e:c100:d87b:5221:8bcc:2317 limit 1)","context":{"exception":{"class":"Illuminate\\Database\\QueryException","message":"SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo for mysql failed: Name or service not known (Connection: mysql, SQL: select * from `cache` where `key` = laravel_cache_1641043@gmail.com|2402:6b00:9e0e:c100:d87b:5221:8bcc:2317 limit 1)","code":2002,"file":"/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Connection.php:813","previous":{"class":"PDOException","message":"SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo for mysql failed: Name or service not known","code":2002,"file":"/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Connectors/Connector.php:65","previous":{"class":"PDOException","message":"PDO::__construct():
+
+2024-08-07T14:29:00.027 app[1857272a445378] nrt [info] php_network_getaddresses: getaddrinfo for mysql failed: Name or service not known","code":0,"file":"/var/www/html/vendor/laravel/framework/src/Illuminate/Database/Connectors/Connector.php:65"}}}},"level":400,"level_name":"ERROR","channel":"production","datetime":"2024-08-07T23:29:00.024595+09:00","extra":{}}
+
+2024-08-07T14:29:00.035 app[1857272a445378] nrt [info] 172.16.160.234 - - [07/Aug/2024:14:29:00 +0000] "POST /login HTTP/1.1" 500 6622 "https://test-project-summer-glitter-2943.fly.dev/login" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36" "2402:6b00:9e0e:c100:d87b:5221:8bcc:2317"

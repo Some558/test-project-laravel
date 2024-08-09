@@ -4,6 +4,18 @@
             一覧表示
         </h2>
     </x-slot>
+        <!-- 検索フォーム -->
+        <form action="{{ route('posts.search') }}" method="GET" class="mb-4">
+            <div class="input-group m-10 font-bold text-gray-600 ">
+                <input type="text" name="query" class="form-control rounded" placeholder="キーワードを入力" value="{{ request('query') }}">
+                <button type="submit" class="ml-4">検索</button>
+            </div>
+        </form>
+    
+        <!-- 検索結果の表示 -->
+        @if(request()->has('query'))
+            <h2>「{{ request('query') }}」の検索結果</h2>
+        @endif
 
     <div class="mx-auto px-6">
         <x-message :message="session('message')" />

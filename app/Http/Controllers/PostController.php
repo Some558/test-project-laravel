@@ -7,6 +7,16 @@ use Illuminate\Http\Request;
 
 class PostController extends Controller
 {
+    public function search(Request $request)
+    {
+        $query = $request->input('query');
+        $posts = Post::where('title','like',"%{$query}%")
+                ->orWhere('body', 'like', "%{$query}%")
+                ->paginate(10);
+
+                return view('post.index', compact('posts', 'query'));
+    }
+
     /**
      * Display a listing of the resource.
      */

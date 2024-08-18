@@ -3,10 +3,37 @@
 namespace App\Http\Controllers;
 
 use App\Models\post;
+use App\Services\PokeApiService;
 use Illuminate\Http\Request;
 
 class PostController extends Controller
 {
+    protected $pokeApiService;
+
+    public function __construct(PokeApiService $pokeApiService)
+    {
+        $this->pokeApiService = $pokeApiService;
+    }
+
+    public function index(Request $request)
+    {
+        $posts = Post::latest()->paginate(10);
+        $pokemonName = $request->input('pokemon_name');
+        $pokemonData = null;
+
+        if ($pokemonName) {
+            $pokemonData = $this->pokeApiService->getPokemon($pokemonName);
+        }
+
+        return view('post.show', compact('posts', 'pokemonData'));
+
+        {
+            // $posts=Post::all();
+            $posts=Post::paginate(10);
+            return view('post.show' , compact('posts'));
+        }
+    }
+
     public function search(Request $request)
     {
         $query = $request->input('query');
@@ -14,18 +41,12 @@ class PostController extends Controller
                 ->orWhere('body', 'like', "%{$query}%")
                 ->paginate(10);
 
-                return view('post.index', compact('posts', 'query'));
+                return view('post.show', compact('posts', 'query'));
     }
 
     /**
      * Display a listing of the resource.
      */
-    public function index()
-    {
-        // $posts=Post::all();
-        $posts=Post::paginate(10);
-        return view('post.index' , compact('posts'));
-    }
 
     /**
      * Show the form for creating a new resource.
